@@ -24,7 +24,6 @@ import edu.berkeley.ground.model.models.Tag;
 import edu.berkeley.ground.model.usage.LineageEdge;
 import edu.berkeley.ground.model.usage.LineageEdgeVersion;
 
-import io.swagger.annotations.Api;
 import java.util.List;
 import java.util.Map;
 
@@ -41,7 +40,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Path("/lineage")
-@Api(value = "/lineage", description = "Interact with lineage edges")
 @Produces(MediaType.APPLICATION_JSON)
 public class LineageEdgesResource {
   private static final Logger LOGGER = LoggerFactory.getLogger(LineageEdgesResource.class);

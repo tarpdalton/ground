@@ -17,16 +17,11 @@ package edu.berkeley.ground;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import io.dropwizard.Configuration;
-import io.federecio.dropwizard.swagger.SwaggerBundleConfiguration;
-
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
 public class GroundServerConfiguration extends Configuration {
-
-  @JsonProperty("swagger")
-  public SwaggerBundleConfiguration swaggerBundleConfiguration;
 
   @NotEmpty
   private String dbType;

@@ -44,8 +44,6 @@ import edu.berkeley.ground.util.PostgresFactories;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
-import io.federecio.dropwizard.swagger.SwaggerBundle;
-import io.federecio.dropwizard.swagger.SwaggerBundleConfiguration;
 
 public class GroundServer extends Application<GroundServerConfiguration> {
   private EdgeFactory edgeFactory;
@@ -73,13 +71,6 @@ public class GroundServer extends Application<GroundServerConfiguration> {
 
   @Override
   public void initialize(Bootstrap<GroundServerConfiguration> bootstrap) {
-    bootstrap.addBundle(new SwaggerBundle<GroundServerConfiguration>() {
-      @Override
-      protected SwaggerBundleConfiguration getSwaggerBundleConfiguration(
-          GroundServerConfiguration configuration) {
-        return configuration.swaggerBundleConfiguration;
-      }
-    });
   }
 
 

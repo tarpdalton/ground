@@ -26,8 +26,6 @@ import edu.berkeley.ground.model.models.EdgeVersion;
 import edu.berkeley.ground.model.models.Node;
 import edu.berkeley.ground.model.models.Tag;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 
 import java.util.List;
 import java.util.Map;
@@ -46,7 +44,6 @@ import org.slf4j.LoggerFactory;
 
 
 @Path("/edges")
-@Api(value = "/edges", description = "Interact with the edges in the graph")
 @Produces(MediaType.APPLICATION_JSON)
 public class EdgesResource {
   private static final Logger LOGGER = LoggerFactory.getLogger(EdgesResource.class);
@@ -76,7 +73,6 @@ public class EdgesResource {
 
   @GET
   @Timed
-  @ApiOperation(value = "Get an edge")
   @Path("/{sourceKey}/{key}")
   public Edge getEdge(@PathParam("sourceKey") String sourceKey) throws GroundException {
     try {

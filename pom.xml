@@ -112,12 +112,6 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>com.smoketurner</groupId>
-            <artifactId>dropwizard-swagger</artifactId>
-            <version>1.0.0-1</version>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/jline/jline -->
         <dependency>
             <groupId>jline</groupId>
