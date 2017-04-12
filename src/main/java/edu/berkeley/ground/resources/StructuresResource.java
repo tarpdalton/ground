@@ -24,7 +24,6 @@ import edu.berkeley.ground.model.models.StructureVersion;
 import edu.berkeley.ground.model.models.Tag;
 
 import edu.berkeley.ground.model.versions.GroundType;
-import io.swagger.annotations.Api;
 
 import java.util.List;
 import java.util.Map;
@@ -42,7 +41,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Path("/structures")
-@Api(value = "/structures", description = "Interact with the structures in the structure")
 @Produces(MediaType.APPLICATION_JSON)
 public class StructuresResource {
   private static final Logger LOGGER = LoggerFactory.getLogger(StructuresResource.class);

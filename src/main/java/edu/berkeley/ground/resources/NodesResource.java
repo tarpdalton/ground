@@ -24,8 +24,6 @@ import edu.berkeley.ground.model.models.Node;
 import edu.berkeley.ground.model.models.NodeVersion;
 import edu.berkeley.ground.model.models.Tag;
 
-import io.swagger.annotations.Api;
-
 import java.util.List;
 import java.util.Map;
 
@@ -43,7 +41,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Path("/nodes")
-@Api(value = "/nodes", description = "Interact with the nodes in the node")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class NodesResource {
